@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancake Recipe</title>
+    <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+    <!--Recipe Header-->
+    <header class="recipe-header">
+        <h1 class="recipe-title">Classic Pancakes</h1>
+        <p>A simple way to make the most delicious and fluffy pancakes</p>
+    </header>
+    <main>
+        <!--Buttons for Instructions and Contrast-->
+        <div class="nav-buttons">
+            <button class="nav-button active" onclick="showContent('ingredients', event)">⭐Ingredients</button>
+            <button class="nav-button" onclick="showContent('instructions', event)">⭐Instructions</button>
+            <button id="contrast-toggle" class="contrast-btn">⭐High Contrast</button> 
+            <button class="nav-button" onclick="showContent('Recommendations', event)">⭐Recommendations</button>
+        </div>
+        <div id="ingredients" class="content-section active">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><input type="checkbox"> 1 cup flour</li>
+                <li><input type="checkbox"> 2 tablespoons sugar</li>
+                <li><input type="checkbox"> 1 tablespoon baking powder</li>
+                <li><input type="checkbox"> 1/2 teaspoon salt</li>
+                <li><input type="checkbox"> 1 cup milk</li>
+                <li><input type="checkbox"> 1 egg</li>
+                <li><input type="checkbox"> 2 tablespoons melted butter</li>
+            </ul>
+        </div>
+
+        <div id="instructions" class="content-section">
+            <h2>Instructions</h2>
+            <ol>
+                <li><input type="checkbox"> In a bowl, mix together the flour, sugar, baking powder, and salt.</li>
+                <li><input type="checkbox"> In a separate bowl, whisk together the milk, egg, and melted butter.</li>
+                <li><input type="checkbox"> Pour the wet ingredients into the dry ingredients and stir until combined.</li>
+                <li><input type="checkbox"> Heat a non-stick pan over medium heat and lightly grease it.</li>
+                <li><input type="checkbox"> Pour 1/4 cup of batter onto the pan for each pancake.</li>
+                <li><input type="checkbox"> Cook until bubbles form on the surface and the edges are set, then flip and cook the other side until golden brown.</li>
+                <li><input type="checkbox"> Serve with syrup, butter, or your favorite toppings!</li>
+            </ol>
+        </div>
+        <div id="recommendations" class="content-section">
+            <h2>Recommendations</h2>
+            <p>Add some recommended items or substitutions</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> Senior Design Project - Fall 24' - Jasmine Singleton, Kiara Mzee</p>
+    </footer>
+    <script src="HighContrast.js"></script>
+    <script src="Selector.js"></script>
+</body>
+</html>

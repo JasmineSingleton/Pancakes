@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Accessible Pancake",
+    "minimum_chrome_version": "24.0.1307.0",
+    "version": "0.0.1",
+    "homepage_url": "http://127.0.0.1:5500/Pancakes/pancake%20page/webpage.html",
+    "icons": {},
+    "content_scripts": [
+      {
+        "matches": [
+          "http://127.0.0.1:5500/Pancakes/pancake%20page/webpage.html"
+        ],
+        "js": [
+          "scripts/jquery.min.js",
+          "scripts/extension.js"
+        ],
+        "css": ["css/extension.css"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
