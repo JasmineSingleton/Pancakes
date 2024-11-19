@@ -10,3 +10,6 @@
     background-color: white; 
     
   }
+.highlight {
+    outline: 3px solid red;
+}
