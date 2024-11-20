@@ -134,6 +134,7 @@ body.high-contrast .contrast-btn {
 .content-section.active {
     display: block;
 }
+/* Image Design */
 .circular {
     width: 80px;  /* Adjust this value to make it smaller/larger */
     height: 80px; /* Keep same as width to maintain circle shape */
