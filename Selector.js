@@ -52,7 +52,7 @@ $(document).ready(function(){
         //Add rating to saved ratings section
         $('#savedRatings').append(`
             <div>
-            ${name} rated this recipe ${currentRating} ${'★'.repeat(currentRating)}${'☆'.repeat(5-currentRating)}
+            ${name} rated this recipe: ${currentRating} ${'★'.repeat(currentRating)}${'☆'.repeat(5-currentRating)}
             </div>
         `);
 
