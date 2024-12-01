@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pancake Recipe</title>
     <link rel="stylesheet" href="webpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!--Recipe Header-->
@@ -19,7 +20,7 @@
             <button class="nav-button active" onclick="showContent('ingredients', event)">⭐Ingredients</button>
             <button class="nav-button" onclick="showContent('instructions', event)">⭐Instructions</button>
             <button id="contrast-toggle" class="contrast-btn">⭐High Contrast</button> 
-            <button class="nav-button" onclick="showContent('Recommendations', event)">⭐Recommendations</button>
+            <button class="nav-button" onclick="showContent('rating', event)">⭐Ratings</button>
         </div>
         <div id="ingredients" class="content-section active">
             <h2>Ingredients</h2>
@@ -46,11 +47,22 @@
                 <li><input type="checkbox"> Serve with syrup, butter, or your favorite toppings!</li>
             </ol>
         </div>
-        <div id="recommendations" class="content-section">
-            <h2>Recommendations</h2>
-            <p>Add some recommended items or substitutions</p>
+         <div id="rating" class="content-section">
+            <h2>Rate this Recipe</h2>
+            <p class="hint">Press 1-5 on your keyboard or click to rate</p>
+            <input type="text" id="userName" placeholder="Enter your name">
+            <div class="stars" aria-label="Rate from 1 to 5 stars">
+                <span class="star" data-rating="1">☆</span>
+                <span class="star" data-rating="2">☆</span>
+                <span class="star" data-rating="3">☆</span>
+                <span class="star" data-rating="4">☆</span>
+                <span class="star" data-rating="5">☆</span>
+            </div>
+            <button id="saveRating" class="save-btn">Save Rating</button>
+            <div id="savedRatings">
+                <h3>Recipe Ratings</h3>
+            </div>
         </div>
-
     </main>
 
     <footer>
